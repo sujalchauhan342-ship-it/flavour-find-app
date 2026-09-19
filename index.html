@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavour Find</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🍴 Flavour Find</h1>
+        <p>Discover delicious recipes from around the world</p>
+    </header>
+
+    <main>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for a recipe..."
+            >
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <p id="message"></p>
+
+        <div id="recipeContainer" class="recipe-container"></div>
+
+    </main>
+
+    <!-- Recipe popup -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+
+            <button id="closeModal" class="close-btn">&times;</button>
+
+            <img id="modalImage" src="" alt="Recipe">
+
+            <h2 id="modalTitle"></h2>
+
+            <h3>Ingredients</h3>
+            <ul id="ingredients"></ul>
+
+            <h3>Instructions</h3>
+            <p id="instructions"></p>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>Made with ❤️ using HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
